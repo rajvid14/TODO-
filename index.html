@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="todo-container">
+        <div id="todo-header">
+            <h3>TODO PROJECT</h3>
+        </div>
+        <div id="add-task" class="add-task">
+            <label for="task-name">Task Name:</label>
+            <input type="text" id="task-name" placeholder="enter your task" required>
+            <span id="taskError" class="error"></span><br><br>
+
+           
+            <label for="task-description">Task Description:</label><br>
+            <textarea id="task-description" rows="3" placeholder="Enter Your task description" required></textarea>
+            <span id="taskdescriptionError" class="error"></span><br><br>
+
+           
+            <label for="task-date">Due Date:</label><br>
+            <input type="date" id="task-date" required>
+            <span id="dateError" class="error"></span><br><br><br>
+
+            
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div id="todo-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

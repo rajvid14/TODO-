@@ -1,0 +1,91 @@
+body{
+    font-family: 'arial',sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#todo-container{
+   max-width: 600px;  
+   width: 100%;
+   background-color: aliceblue;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px black;
+   overflow: hidden;
+}
+
+#todo-header{
+    background-color: #3498db;
+    color: WHITE;
+    padding: 20px;
+    height: 25px;
+    text-align: center;
+    border-bottom: 1px solid #ddd ;
+}
+
+#add-task{
+    padding: 20px;
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+button{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1 px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+    background-color: #3498db ;
+    color: #fff;
+    border: none;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
+
+#todo-list{
+    padding: 20px;
+}
+
+.todo-item{
+    background-color: rgb(186, 221, 255);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button.delete {
+  background-color: #e74c3c;
+}
+
+button.delete:hover{
+    background-color: #a91101;
+}
+
+button.completed {
+  background-color: #27ae60;
+}
+
+button.completed:hover{
+    background-color: #095c2b;
+}
+
+.error{
+    color: red;
+}
+
